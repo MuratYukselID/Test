@@ -37,14 +37,21 @@ export default function CountdownTimer() {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setTimeLeft(calculateTimeLeft());
-    setIsMounted(true);
+    const startTimer = () => {
+      setTimeLeft(calculateTimeLeft());
+      setIsMounted(true);
+    };
+
+    const initialTimeout = setTimeout(startTimer, 0);
 
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    return () => clearInterval(timer);
+    return () => {
+      clearTimeout(initialTimeout);
+      clearInterval(timer);
+    };
   }, []);
 
   // SSR placeholder to avoid hydration mismatch

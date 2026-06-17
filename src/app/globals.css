@@ -24,9 +24,7 @@
   --color-white: #F5F5F5;
   --color-pure-white: #FFFFFF;
 
-  /* Typography */
-  --font-heading: 'Outfit', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  /* Typography — set by next/font on the html element */
 
   /* Spacing */
   --space-xs: 0.25rem;
