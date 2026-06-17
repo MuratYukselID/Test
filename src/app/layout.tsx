@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sakaryamimarlik.com"),
+  metadataBase: new URL("https://sakaryamimarlik.com.tr"),
   title: {
     default: "Sakarya Mimarlık | Mimari Proje & Tasarım",
     template: "%s | Sakarya Mimarlık",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://sakaryamimarlik.com",
+    url: "https://sakaryamimarlik.com.tr",
     siteName: "Sakarya Mimarlık",
     title: "Sakarya Mimarlık | Mimari Proje & Tasarım",
     description:
@@ -108,8 +108,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Sakarya Mimarlık",
-              url: "https://sakaryamimarlik.com",
-              logo: "https://sakaryamimarlik.com/images/logo.jpg",
+              url: "https://sakaryamimarlik.com.tr",
+              logo: "https://sakaryamimarlik.com.tr/images/logo.jpg",
               description:
                 "Mimari proje, tasarım ve danışmanlık hizmetleri sunan modern mimarlık firması.",
               address: {

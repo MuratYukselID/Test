@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://sakaryamimarlik.com/sitemap.xml",
+    sitemap: "https://sakaryamimarlik.com.tr/sitemap.xml",
   };
 }
